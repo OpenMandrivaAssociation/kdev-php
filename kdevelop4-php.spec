@@ -1,4 +1,4 @@
-%define betaver beta1
+%define betaver beta2
 
 Summary: PHP plugin for kdevelop
 Name: kdevelop4-php
