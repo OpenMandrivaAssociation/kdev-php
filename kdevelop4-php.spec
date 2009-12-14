@@ -19,7 +19,6 @@ to KDevelop.
 
 %files
 %defattr(-,root,root)
-%_kde_bindir/php-parser
 %_kde_libdir/kde4/kdevphplanguagesupport.so
 %_kde_libdir/libkdev4phpcompletion.so
 %_kde_libdir/libkdev4phpduchain.so
