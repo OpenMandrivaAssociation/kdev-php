@@ -1,10 +1,10 @@
-%define betaver beta2
+%define betaver rc1
 
 Summary: PHP plugin for kdevelop
 Name: kdevelop4-php
 Version: 0
 Release: %mkrel -c %betaver 1
-Source0: http://fr2.rpmfind.net/linux/KDE/unstable/kdevelop/3.9.96/src/kdevelop-php-%{betaver}.tar.bz2
+Source0: http://fr2.rpmfind.net/linux/KDE/unstable/kdevelop/3.10.0/src/kdev-php-%{betaver}.tar.bz2
 License: GPLv2+
 Group: Development/Other
 Url: http://www.kdevelop.org
@@ -24,13 +24,13 @@ to KDevelop.
 %_kde_libdir/libkdev4phpduchain.so
 %_kde_libdir/libkdev4phpparser.so
 %_kde_appsdir/kdevappwizard/templates/simple_phpapp.tar.bz2
-%_kde_appsdir/kdevphpsupport/phpfunctions.php
+%_kde_appsdir/kdevphpsupport/phpfunctions.php.gz
 %_kde_services/kdevphpsupport.desktop
 
 #--------------------------------------------------------------------
 
 %prep
-%setup -qn kdevelop-php-%{betaver}
+%setup -qn kdev-php-%{betaver}
 
 %build
 %cmake_kde4
