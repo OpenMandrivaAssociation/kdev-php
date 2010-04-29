@@ -1,5 +1,3 @@
-%define betaver rc1
-
 Summary: PHP plugin for kdevelop
 Name: kdevelop4-php
 Version: 1.0.0
