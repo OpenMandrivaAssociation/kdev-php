@@ -1,18 +1,16 @@
-%define git 20101027
 Summary: PHP plugin for kdevelop
 Name: kdevelop4-php
-Version: 1.1
-Release: %mkrel 1.git%{git}.1
-Source0: http://fr2.rpmfind.net/linux/KDE/stable/kdevelop/1.0.0/src/kdevelop-php-%{version}-git%{git}.tar.bz2
-Patch001: 0001-Add-the-text-x-php-mimetype-to-the-.desktop-file.patch
+Version: 1.1.80
+Release: %mkrel 1
+Source0: http://fr2.rpmfind.net/linux/KDE/unstable/kdevelop/4.1.80/src/kdevelop-php-%{version}.tar.bz2
 License: GPLv2+
 Group: Development/Other
 Url: http://www.kdevelop.org
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: kdelibs4-devel
-BuildRequires: kdevplatform4-devel >= 4:1.0.0
+BuildRequires: kdevplatform4-devel >= 4:1.1.80
 BuildRequires: kdevelop-pg-qt-devel
-Requires: kdevelop4 >= 4:4.0.0
+Requires: kdevelop4 >= 4:4.1.80
 
 %description
 This plugin adds PHP language support (including classview and code-completion)
@@ -31,8 +29,7 @@ to KDevelop.
 #--------------------------------------------------------------------
 
 %prep
-%setup -qn kdevelop-php
-%apply_patches
+%setup -qn kdevelop-php-%{version}
 
 %build
 %cmake_kde4
