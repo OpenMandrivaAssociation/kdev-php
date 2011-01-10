@@ -1,16 +1,16 @@
 Summary: PHP plugin for kdevelop
 Name: kdevelop4-php
-Version: 1.1.81
+Version: 1.1.90
 Release: %mkrel 1
-Source0: http://fr2.rpmfind.net/linux/KDE/unstable/kdevelop/4.1.81/src/kdevelop-php-%{version}.tar.bz2
+Source0: http://fr2.rpmfind.net/linux/KDE/unstable/kdevelop/4.1.90/src/kdevelop-php-%{version}.tar.bz2
 License: GPLv2+
 Group: Development/Other
 Url: http://www.kdevelop.org
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: kdelibs4-devel
-BuildRequires: kdevplatform4-devel >= 4:1.1.81
+BuildRequires: kdevplatform4-devel >= 4:1.1.90
 BuildRequires: kdevelop-pg-qt-devel
-Requires: kdevelop4 >= 4:4.1.81
+Requires: kdevelop4 >= 4:4.1.90
 
 %description
 This plugin adds PHP language support (including classview and code-completion)
