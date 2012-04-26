@@ -8,7 +8,7 @@ Group: Development/Other
 Url: http://www.kdevelop.org
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: kdelibs4-devel
-BuildRequires: kdevplatform4-devel >= 4:1.2.0
+BuildRequires: kdevplatform4-devel >= 4:1.3.0
 BuildRequires: kdevelop-pg-qt-devel
 Requires: kdevelop4 >= 4:4.2.3
 
