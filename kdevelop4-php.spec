@@ -1,6 +1,6 @@
 Summary: PHP plugin for kdevelop
 Name: kdevelop4-php
-Version: 1.2.3
+Version: 1.3.1
 Release: %mkrel 1
 Source0: http://fr2.rpmfind.net/linux/KDE/stable/kdevelop/4.2.3/src/kdevelop-php-%{version}.tar.bz2
 License: GPLv2+
