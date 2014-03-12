@@ -19,12 +19,15 @@ to KDevelop.
 
 %files -f kdevphp.lang
 %{_kde_libdir}/kde4/kdevphplanguagesupport.so
+%{_kde_libdir}/kde4/kdevphpunitprovider.so
 %{_kde_libdir}/libkdev4phpcompletion.so
 %{_kde_libdir}/libkdev4phpduchain.so
 %{_kde_libdir}/libkdev4phpparser.so
 %{_kde_appsdir}/kdevappwizard/templates/simple_phpapp.tar.bz2
 %{_kde_appsdir}/kdevphpsupport/phpfunctions.php
+%{_kde_appsdir}/kdevphpsupport/punitdeclarations.php
 %{_kde_services}/kdevphpsupport.desktop
+%{_kde_services}/kdevphpunitprovider.desktop
 
 #--------------------------------------------------------------------
 
