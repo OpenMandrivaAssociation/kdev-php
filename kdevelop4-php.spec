@@ -25,7 +25,7 @@ to KDevelop.
 %{_kde_libdir}/libkdev4phpparser.so
 %{_kde_appsdir}/kdevappwizard/templates/simple_phpapp.tar.bz2
 %{_kde_appsdir}/kdevphpsupport/phpfunctions.php
-%{_kde_appsdir}/kdevphpsupport/punitdeclarations.php
+%{_kde_appsdir}/kdevphpsupport/phpunitdeclarations.php
 %{_kde_services}/kdevphpsupport.desktop
 %{_kde_services}/kdevphpunitprovider.desktop
 
