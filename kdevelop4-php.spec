@@ -3,7 +3,7 @@
 Summary:	PHP plugin for kdevelop
 Name:		kdevelop4-php
 Version:	1.6.0
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Development/Other
 Url:		http://www.kdevelop.org
