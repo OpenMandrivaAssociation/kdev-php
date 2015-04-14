@@ -1,4 +1,5 @@
 removed_sources:
   kdevelop-php-1.4.1.tar.bz2: f3523acfc27d0fd68c2b1f970b4ac42dcda38ced
-sources:
   kdevelop-php-1.6.0.tar.xz: 705b1f36a6fbbac207e8ca78619827206b75b48e
+sources:
+  kdevelop-php-1.7.1.tar.xz: 384bb55b8878041b1979d1652f149195842fb5e2
