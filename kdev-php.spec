@@ -2,7 +2,7 @@
 
 Summary:	PHP plugin for kdevelop
 Name:		kdev-php
-Version:	5.0.3
+Version:	5.2.1
 Release:	1
 License:	GPLv2+
 Group:		Development/Other

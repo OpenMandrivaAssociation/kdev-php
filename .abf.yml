@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kdev-php-5.0.3.tar.xz: b670d0fd8a55d0691063400fc17d2232fa3cc44a
+sources:
+  kdev-php-5.2.1.tar.xz: 4aa4c5549a5f9cd834383b8bb822851795023e5b
