@@ -27,11 +27,12 @@ This plugin adds PHP language support (including classview and code-completion)
 to KDevelop.
 
 %files -f kdevphp.lang
+%{_sysconfdir}/xdg/kdevphpsupport.categories
 %{_libdir}/libkdevphpcompletion.so
 %{_libdir}/libkdevphpduchain.so
 %{_libdir}/libkdevphpparser.so
-%{_libdir}/qt5/plugins/kdevplatform/25/*.so
-%{_libdir}/qt5/plugins/kdevplatform/25/kcm/*.so
+%{_libdir}/qt5/plugins/kdevplatform/30/*.so
+%{_libdir}/qt5/plugins/kdevplatform/30/kcm/*.so
 %{_datadir}/kdevappwizard/templates/simple_phpapp.tar.bz2
 %{_datadir}/kdevphpsupport/phpfunctions.php
 %{_datadir}/kdevphpsupport/phpunitdeclarations.php
@@ -43,7 +44,7 @@ to KDevelop.
 %setup -q
 
 %build
-%cmake_kde5 -DBSDTAR=1
+%cmake_kde5 -DBSDTAR=1 -DBUILD_TESTING=OFF
 %ninja
 
 %install
