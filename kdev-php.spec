@@ -2,8 +2,8 @@
 
 Summary:	PHP plugin for kdevelop
 Name:		kdev-php
-Version:	5.2.1
-Release:	3
+Version:	5.3.1
+Release:	1
 License:	GPLv2+
 Group:		Development/Other
 Url:		http://www.kdevelop.org
@@ -31,14 +31,26 @@ to KDevelop.
 %{_libdir}/libkdevphpcompletion.so
 %{_libdir}/libkdevphpduchain.so
 %{_libdir}/libkdevphpparser.so
-%{_libdir}/qt5/plugins/kdevplatform/30/*.so
-%{_libdir}/qt5/plugins/kdevplatform/30/kcm/*.so
+%{_libdir}/qt5/plugins/kdevplatform/31/*.so
+%{_libdir}/qt5/plugins/kdevplatform/31/kcm/*.so
 %{_datadir}/kdevappwizard/templates/simple_phpapp.tar.bz2
 %{_datadir}/kdevphpsupport/phpfunctions.php
 %{_datadir}/kdevphpsupport/phpunitdeclarations.php
 %{_datadir}/kservices5/*.desktop
+%{_datadir}/metainfo/*.xml
 
-#--------------------------------------------------------------------
+#------------------------------------------------
+%package devel
+Summary:        Development files for kdevelop-php
+Group:          Development/KDE and Qt
+Requires:	%{name} = %{EVRD}
+
+%description devel
+Development files for kdevelop-php.
+
+%files devel
+%{_libdir}/cmake/KDevPHP
+%{_includedir}/kdev-php
 
 %prep
 %setup -q
