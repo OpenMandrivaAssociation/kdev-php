@@ -2,7 +2,7 @@
 
 Summary:	PHP plugin for kdevelop
 Name:		kdev-php
-Version:	5.3.1
+Version:	5.4.6
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
@@ -27,17 +27,17 @@ This plugin adds PHP language support (including classview and code-completion)
 to KDevelop.
 
 %files -f kdevphp.lang
-%{_sysconfdir}/xdg/kdevphpsupport.categories
 %{_libdir}/libkdevphpcompletion.so
 %{_libdir}/libkdevphpduchain.so
 %{_libdir}/libkdevphpparser.so
-%{_libdir}/qt5/plugins/kdevplatform/31/*.so
-%{_libdir}/qt5/plugins/kdevplatform/31/kcm/*.so
+%{_libdir}/qt5/plugins/kdevplatform/32/*.so
+%{_libdir}/qt5/plugins/kdevplatform/32/kcm/*.so
 %{_datadir}/kdevappwizard/templates/simple_phpapp.tar.bz2
 %{_datadir}/kdevphpsupport/phpfunctions.php
 %{_datadir}/kdevphpsupport/phpunitdeclarations.php
 %{_datadir}/kservices5/*.desktop
 %{_datadir}/metainfo/*.xml
+%{_datadir}/qlogging-categories5/kdevphpsupport.categories
 
 #------------------------------------------------
 %package devel
