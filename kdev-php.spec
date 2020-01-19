@@ -27,7 +27,6 @@ This plugin adds PHP language support (including classview and code-completion)
 to KDevelop.
 
 %files -f kdevphp.lang
-%{_sysconfdir}/xdg/kdevphpsupport.categories
 %{_libdir}/libkdevphpcompletion.so
 %{_libdir}/libkdevphpduchain.so
 %{_libdir}/libkdevphpparser.so
