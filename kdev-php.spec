@@ -37,6 +37,7 @@ to KDevelop.
 %{_datadir}/kdevphpsupport/phpunitdeclarations.php
 %{_datadir}/kservices5/*.desktop
 %{_datadir}/metainfo/*.xml
+%{_datadir}/qlogging-categories5/kdevphpsupport.categories
 
 #------------------------------------------------
 %package devel
