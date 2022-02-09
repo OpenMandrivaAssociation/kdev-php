@@ -30,8 +30,8 @@ to KDevelop.
 %{_libdir}/libkdevphpcompletion.so
 %{_libdir}/libkdevphpduchain.so
 %{_libdir}/libkdevphpparser.so
-%{_libdir}/qt5/plugins/kdevplatform/33/*.so
-%{_libdir}/qt5/plugins/kdevplatform/33/kcm/*.so
+%{_libdir}/qt5/plugins/kdevplatform/35/*.so
+%{_libdir}/qt5/plugins/kdevplatform/35/kcm/*.so
 %{_datadir}/kdevappwizard/templates/simple_phpapp.tar.bz2
 %{_datadir}/kdevphpsupport/phpfunctions.php
 %{_datadir}/kdevphpsupport/phpunitdeclarations.php
