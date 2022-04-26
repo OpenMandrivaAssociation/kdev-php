@@ -1,14 +1,12 @@
-%define kdevelop_ver 5.%(echo %{version} | cut -d. -f2,3)
-
 Summary:	PHP plugin for kdevelop
 Name:		kdev-php
-Version:	22.03.90
+Version:	22.04.0
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
 Url:		http://www.kdevelop.org
-Source0:	http://download.kde.org/stable/kdevelop/%{kdevelop_ver}/src/kdev-php-%{version}.tar.xz
-BuildRequires:	kdevplatform-devel >= 4:%{version}
+Source0:	http://download.kde.org/stable/release-service/%{version}/src/kdev-php-%{version}.tar.xz
+BuildRequires:	kdevplatform-devel >= %{EVRD}
 BuildRequires:	kdevelop-pg-qt-devel >= 0.9.82
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Widgets)
@@ -20,7 +18,7 @@ BuildRequires:	cmake(KF5TextEditor)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5ItemModels)
 BuildRequires:	cmake(KF5KCMUtils)
-Requires:	kdevelop >= 4:%{kdevelop_ver}
+Requires:	kdevelop >= %{EVRD}
 
 %description
 This plugin adds PHP language support (including classview and code-completion)
