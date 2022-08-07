@@ -1,11 +1,11 @@
 Summary:	PHP plugin for kdevelop
 Name:		kdev-php
-Version:	22.04.3
+Version:	22.07.90
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
 Url:		http://www.kdevelop.org
-Source0:	http://download.kde.org/stable/release-service/%{version}/src/kdev-php-%{version}.tar.xz
+Source0:	http://download.kde.org/%([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un)stable/release-service/%{version}/src/kdev-php-%{version}.tar.xz
 BuildRequires:	kdevplatform-devel >= %{EVRD}
 BuildRequires:	kdevelop-pg-qt-devel >= 0.9.82
 BuildRequires:	pkgconfig(Qt5Core)
@@ -28,8 +28,8 @@ to KDevelop.
 %{_libdir}/libkdevphpcompletion.so
 %{_libdir}/libkdevphpduchain.so
 %{_libdir}/libkdevphpparser.so
-%{_libdir}/qt5/plugins/kdevplatform/36/*.so
-%{_libdir}/qt5/plugins/kdevplatform/36/kcm/*.so
+%{_libdir}/qt5/plugins/kdevplatform/*/*.so
+%{_libdir}/qt5/plugins/kdevplatform/*/kcm/*.so
 %{_datadir}/kdevappwizard/templates/simple_phpapp.tar.bz2
 %{_datadir}/kdevphpsupport/phpfunctions.php
 %{_datadir}/kdevphpsupport/phpunitdeclarations.php
