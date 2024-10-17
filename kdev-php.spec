@@ -4,7 +4,7 @@ Version:	23.08.5
 Release:	2
 License:	GPLv2+
 Group:		Development/Other
-Url:		http://www.kdevelop.org
+Url:		https://www.kdevelop.org
 Source0:	http://download.kde.org/%([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un)stable/release-service/%{version}/src/kdev-php-%{version}.tar.xz
 BuildRequires:	kdevplatform-devel >= %{EVRD}
 BuildRequires:	kdevelop-pg-qt-devel >= 0.9.82
